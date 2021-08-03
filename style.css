@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+body {
+    background-color: #EDF2F7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;    
+}
+    
+    .alert-container {
+        width: 450px;
+        height: 231px;
+        margin: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #EDF2F7;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+                
+    }
+    .hide {
+        display: none;
+    }
+        .alert-container img {
+            width: 64px;
+            height: 70px;
+            margin: 2rem 0 1rem 0 ;
+            }
+
+        .alert-container p {
+            margin: 0.5rem;
+            color: crimson;
+        }
+        
+        .alert-container button {
+            width: 80px;
+            border-radius: 15px;
+            margin: 1rem;
+            background: #009CE0;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 80%;
+        box-shadow: -24px -28px 60px -4px rgb(255, 255, 255), 20px 20px 60px 50px rgba(190, 190, 190, 0.781);
+        border-radius: 30px;
+    }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            width: 20%;
+            height: 100%;
+            min-width: min-content;
+            align-items: center;
+            border-radius: 30px 0px 0px 30px;
+        }
+            h1 {
+                text-align: center;
+                font-size: 2.5rem;
+                color: rgb(0, 198, 224);
+                margin: 2.5rem 0;
+                font-family: sans-serif;
+            }
+
+            nav {
+                width: 100%;
+                padding: 0 1rem 0 1rem;
+                display: flex;
+                flex-direction: column;
+            }
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: black;
+                    margin: 1rem 0 1rem 0;
+                    width: 100%;
+                    height: 2rem;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+                a span {
+                    margin: 0.5rem;
+                }
+                    a:hover {
+                        background: #FFBF00;
+
+                    }
+
+                    
+
+        section {
+            background-color: rgba(237,242,247);;
+            width: 80%;
+            height: 100%;
+            border-radius: 0px 30px 30px 0px;
+        }
+
+        
+
+            th {
+                text-align: left;
+                padding: 0 0 1rem 0.5rem;
+             
+            }
+                td {
+                    padding-bottom: 0rem;
+                    border-bottom: solid 0.1ch rgba(113, 185, 226, 0.418);
+                    color: rgba(0, 0, 0, 0.733);
+                    
+                }
+                .acciones {
+                    display: flex;
+                    flex-direction: row;
+                }
+                td a {
+                    justify-content: left;
+                    text-decoration: none;
+                    margin: 1rem 0 1rem 0;
+                    width: fit-content;
+                    padding: 0.5rem;
+                    /* min-width: fit-content; */
+                    text-align: center;
+                    border-radius: 0px;
+                }
+                
+                .editar {
+                    color: rgb(0, 167, 189);
+                }
+
+                .eliminar {
+                    color: rgb(221, 113, 94);
+                }
+                
+                
+                .editar:hover {
+                    background-color: white;
+                    color: rgb(0, 95, 107);
+                }
+
+                .eliminar:hover {
+                    background-color: white;
+                    color: rgb(179, 27, 0);
+
+                }
+
+                    .nombreTd {
+                        line-height: 2.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        color: black;
+                        font-weight: 700;
+                    }
+
+                    .correoTd {
+                        text-decoration: none;
+                        font-weight: 400;
+                        color: rgb(0, 167, 189);
+                    }
+
+        .seccion-formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            min-width: fit-content;
+        }
+        
+        .contenedorForm {
+            position: relative;
+            width: 25rem;
+            background-color: white;
+            border: solid #e2e8f0;
+            border-width: 0.1ch;
+            border-radius: 15px;
+            -webkit-box-shadow: 0px 0px 5px 3px #878787; 
+            box-shadow: 0px 0px 7px 1px #8787874b;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+
+            
+            }
+
+                label {
+                    color: rgb(97, 96, 96);
+                }
+
+                .contenedorForm input {
+                    width: 100%;
+                    margin: 0.5rem 0.1rem;
+                    height: 1.8rem;
+                    border: solid #e2e8f0;
+                    border-width: 0.1ch;
+                    padding: 0 0.5rem 0 0.5rem;
+                }
+
+                button {
+                    margin: 0.5rem 0 0 0.1rem;
+                    height: 2rem;
+                    border: none;
+                    color: honeydew;
+                    font-weight: 700;
+                    background-color: rgb(0, 198, 224);;
+                    font-size: 1rem;
+                }
+                    button:hover {
+                        background-color: rgb(0, 138, 156);;
+
+                    }
+
+                    .error {
+                        text-align: center;
+                        padding: 0.8rem 0;
+                        background-color: rgba(240, 137, 137, 0.39);
+                        color: red;
+                        border: solid 0.1ch rgba(212, 64, 64, 0.637);
+                        margin: 1rem;
+                    }
+
+                    .correcto {
+                        text-align: center;
+                        padding: 0.8rem 0;
+                        background-color: rgba(161, 240, 137, 0.39);
+                        color: rgb(8, 70, 34);
+                        border: solid 0.1ch rgb(94, 212, 64);
+                        margin: 1rem;
+                    }
+            h2 {
+                text-align: center;
+                margin: 2rem;
+            }
+
+            .tabla-contenedor {
+                margin: 0 2rem;
+                overflow: scroll;
+                overflow-x: hidden;
+                height: 80%;
+            }
+
+            ::-webkit-scrollbar{
+                width: 12px;
+                background-color: #f5f5f500;
+            }
+            ::-webkit-scrollbar-track{
+                -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+                border-radius: 10px;
+                background-color: #ffffff00;
+            }
+            ::-webkit-scrollbar-thumb{
+                border-radius: 10px;
+                background-color: rgb(0, 138, 156);
+                background-image: -webkit-linear-gradient(90deg,transparent,rgba(255, 255, 255, 0.4) 50%,transparent,transparent)
+            }
+                table{
+                    width: 100%;
+                    padding: 0.5rem 0.5rem 0 0.5rem;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 5px;
+                    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+                

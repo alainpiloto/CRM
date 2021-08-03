@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <title>CRM</title>
+</head>
+<body class="">
+    <div class="container">
+        
+        <aside class="barra-lateral">
+            <h1 class="titulo-barra">CRM</h1>
+            <nav class="nav-bar">
+                <a href="index.html" class="boton-cliente">
+                    <span class="material-icons-outlined">
+                        storage
+                        </span>Clientes
+                </a>
+                <a href="nuevo-cliente.html" class="boton-nuevo-cliente">
+                    <span class="material-icons-outlined">
+                        person_add
+                        </span>Agregar Cliente
+                </a>
+            </nav>
+        </aside>
+        <section class="seccion-formulario">
+            <h2>Nuevo Cliente</h2>
+           <div class="contenedorForm">
+               <form action="submit" id='formulario'>
+                   <label for="nombre" class="nombre" name="nombre">Nombre</label>
+                        <input type="text" id="nombre"> 
+                   <label for="email" class="email">Email</label>
+                        <input type="email" id="email">
+                   <label for="Telefono" class="Telefono">Teléfono</label>
+                        <input type="tel" name="" id="telefono">
+                   <label for="empresa" class="empresa">Empresa</label>
+                        <input type="text" name="empresa" id="empresa">
+                    <button type="submit">Agregar Cliente</button>
+               </form>
+
+           </div>
+        </section>
+        
+    </div>
+    <script src="nuevoCliente.js"></script>
+    <script src="funciones.js"></script>
+
+</body>
+</html>
