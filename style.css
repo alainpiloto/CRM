@@ -107,8 +107,10 @@ body {
                         background: #FFBF00;
 
                     }
-
                     
+                    .focus {
+                        background: #FFBF00;
+                    }
 
         section {
             background-color: rgba(237,242,247);;

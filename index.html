@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet">
+      
     <title>CRM</title>
 </head>
 <body >
@@ -56,5 +57,11 @@
         
     </div>
     <script src="appCRM.js"></script>
+    <script>
+        window.onload = () => {
+            const linkActual = document.querySelector('.boton-cliente')
+            linkActual.classList.add('focus')
+        }
+    </script>
 </body>
 </html>

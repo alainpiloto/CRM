@@ -38,4 +38,3 @@ function imprimirAlerta(mensaje, tipo) {
     }
 }
 
-console.log('desde funciones')

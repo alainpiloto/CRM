@@ -28,7 +28,7 @@
             </nav>
         </aside>
         <section class="seccion-formulario">
-            <h2>Nuevo Cliente</h2>
+            <h2>Editar Cliente</h2>
            <div class="contenedorForm">
                <form action="submit" id='formulario'>
                    <label for="nombre" class="nombre" name="nombre">Nombre</label>
@@ -47,6 +47,12 @@
         </section>
         
     </div>
+    <script>
+        window.onload = () => {
+            const linkActual = document.querySelector('.boton-nuevo-cliente')
+            linkActual.classList.add('focus')
+        }
+    </script>
     <script src="editarcliente.js"></script>
     <script src="funciones.js"></script>
 

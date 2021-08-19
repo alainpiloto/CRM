@@ -1,7 +1,11 @@
 (function() {
    const listadoClientes = document.querySelector('#listado-clientes');
+    
+
 
     window.addEventListener('DOMContentLoaded', () => {
+
+        
         crearDB();
 
         if(window.indexedDB.open('crm', 1) ){ 
